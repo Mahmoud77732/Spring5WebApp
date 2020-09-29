@@ -9,7 +9,7 @@ public class Author {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 
     private String firstName;
     private String lastName;
@@ -20,18 +20,18 @@ public class Author {
     public Author() {
     }
 
-    public Author(long id, String firstName, String lastName, Set<Book> books) {
+    public Author(Long id, String firstName, String lastName, Set<Book> books) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.books = books;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
