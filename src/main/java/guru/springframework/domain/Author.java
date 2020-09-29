@@ -20,7 +20,7 @@ public class Author {
     public Author() {
     }
 
-    public Author(long id, String firstName, String lastName, Set<Book> books) {
+    public Author(Long id, String firstName, String lastName, Set<Book> books) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
